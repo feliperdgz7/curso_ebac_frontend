@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="./imagens/lista.png" alt="logo-lista">
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <div class="container">
+        <form class="formTarefas">
+            <h2>Insira uma tafera</h2>
+            <input type="text" id="adicionarTarefa" required placeholder="Adicione uma Tarefa" />
+            <button type="submit" id="botaoAdd">Adicionar</button>
+        </form>
+        <ul id="listaTarefas"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

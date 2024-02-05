@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(217, 92, 82, 0.5);
+}
+
+header {
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: rgba(217, 92, 82, 1);
+    box-shadow: 0 8px 8px rgb(247, 18, 1);
+    text-transform: uppercase;
+    font-family: 'Bungee', sans-serif;
+}
+
+header img {
+    height: 60px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button { /* botao adicionar */
+    background-color: #009432;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+#botaoAdd:hover { /*hover no botao adicionar*/
+    background: #2daa57;
+}
+
+#listaTarefas { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li { /*lista de terafas*/
+    padding: 12px;
+    background: rgb(231, 80, 70);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul .fa-check, .fa-trash{ /*posição dos botoes check e trash*/
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check{ /*botao check*/
+    right: 50px;
+    color: #009432;
+}
+
+ul .fa-trash{ /*botao trash*/
+    right: 15px;
+    color: #fc0e0e;
+}
+
+ul .checked{ /*comando visual de execução apos clickar em elemento da lista (para concluir tarefa)*/
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: 2s;
+}
